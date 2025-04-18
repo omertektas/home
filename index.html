@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ömer Faruk Tektaş - Computer Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Ömer Faruk Tektaş</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="images/pp.png" alt="Ömer Faruk Tektaş" />
+    <h2>Hello, I’m</h2>
+    <h1>Ömer</h1>
+    <h3>Embedded Software Engineer</h3>
+
+    <div class="buttons">
+      <a href="assets/cv.pdf" download class="download">📄 Download CV</a>
+      
+    </div>
+
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/omerfaruktektas/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn"></a>
+      <a href="https://github.com/omertektas" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"></a>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="section-subtitle">Get To Know More</p>
+    <h2 class="section-title">About Me</h2>
+    <p style="max-width: 900px; margin: 20px auto; font-size: 18px; color: #555;">
+      Hello, I am a graduate of Firat University Computer Engineering.
+    </p>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+      <div class="card">
+        <div style="font-size: 30px;">🏅</div>
+        <h3>Experience</h3>
+        <p>Software Developer @Insider<br>Game Developer @Oyedu</p>
+      </div>
+      <div class="card">
+        <div style="font-size: 30px;">👥</div>
+        <h3>Education</h3>
+        <p>B.Sc. Bachelors Degree @Fırat University</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <p class="section-subtitle">Explore My</p>
+    <h2 class="section-title">Experience</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+      <div class="card">
+        <h3>Embedded Systems</h3>
+        <ul class="skills-list">
+          <li><strong>✔ Arduino</strong><br><span style="color: gray;">Intermediate</span></li>
+          <li><strong>✔ STM32</strong><br><span style="color: gray;">Experienced</span></li>
+          <li><strong>✔ ARM</strong><br><span style="color: gray;">Intermediate</span></li>
+          <li><strong>✔ UART</strong><br><span style="color: gray;">Intermediate</span></li>
+          <li><strong>✔ I2C</strong><br><span style="color: gray;">Intermediate</span></li>
+          <li><strong>✔ SPI</strong><br><span style="color: gray;">Intermediate</span></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Software Engineering</h3>
+        <ul class="skills-list">
+          <li><strong>✔ Algorithms</strong><br><span style="color: gray;">Experienced</span></li>
+          <li><strong>✔ Data Structures</strong><br><span style="color: gray;">Intermediate</span></li>
+          <li><strong>✔ Java</strong><br><span style="color: gray;">Experienced</span></li>
+          <li><strong>✔ Python</strong><br><span style="color: gray;">Basic</span></li>
+          <li><strong>✔ C</strong><br><span style="color: gray;">Intermediate</span></li>
+          <li><strong>✔ C#</strong><br><span style="color: gray;">Experienced</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <p class="section-subtitle">Browse My Recent</p>
+    <h2 class="section-title">Projects</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+      <!-- Tek bir şablon kullanılabilir -->
+      <div class="project-card">
+        <img src="assets/proje.png" alt="Project 1">
+        <h3 style="margin: 7px;">Project One</h3>
+        <div>
+          <a href="#" class="github-link">Github</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="assets/proje.png" alt="Project 2">
+        <h3 style="margin: 7px;">Project Two</h3>
+        <div>
+          <a href="#" class="github-link">Github</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="assets/proje.png" alt="Project 3">
+        <h3 style="margin: 7px;">Project Three</h3>
+        <div>
+          <a href="#" class="github-link">Github</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <p class="section-subtitle">Get in Touch</p>
+    <h2 class="section-title">Contact Me</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Full Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</body>
+</html>
