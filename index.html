@@ -8,9 +8,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Ömer Faruk Tektaş</h1>
-    <nav>
+  <header class="header">
+    <div class="name">Ömer Faruk Tektaş</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav class="nav-links" id="menu">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
@@ -19,7 +20,7 @@
   </header>
 
   <section class="hero">
-    <img src="images/pp2.jpeg" alt="Ömer Faruk Tektaş" />
+    <img src="images/pp.png" alt="Ömer Faruk Tektaş" />
     <h2>Hello, I’m</h2>
     <h1>Ömer</h1>
     <h3>Embedded Software Engineer</h3>
@@ -39,7 +40,7 @@
     <p class="section-subtitle">Get To Know More</p>
     <h2 class="section-title">About Me</h2>
     <p style="max-width: 900px; margin: 20px auto; font-size: 18px; color: #555;">
-      Hello, I am a graduate of Firat University Computer Engineering.I am currently interested in embedded systems.
+      Hello, I am a graduate of Firat University Computer Engineering.
     </p>
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
       <div class="card">
@@ -136,5 +137,6 @@
       </a>
     </div>
   </section>
+  <script src="script.js"></script>
 </body>
 </html>
