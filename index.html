@@ -1,142 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ömer Faruk Tektaş - Computer Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="header">
-    <div class="name">Ömer Faruk Tektaş</div>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <nav class="nav-links" id="menu">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gökçenaz Akyol</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Gökçenaz Akyol</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-  </header>
-
-  <section class="hero">
-    <img src="images/pp.png" alt="Ömer Faruk Tektaş" />
-    <h2>Hello, I’m</h2>
-    <h1>Ömer</h1>
-    <h3>Embedded Software Engineer</h3>
-
-    <div class="buttons">
-      <a href="./assets/cv.pdf"  download class="download">📄 Download CV</a>
-      
-    </div>
-
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/omerfaruktektas/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn"></a>
-      <a href="https://github.com/omertektas" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"></a>
-    </div>
-  </section>
-
-  <section id="about">
-    <p class="section-subtitle">Get To Know More</p>
-    <h2 class="section-title">About Me</h2>
-    <p style="max-width: 900px; margin: 20px auto; font-size: 18px; color: #555;">
-      Hello, I am a graduate of Firat University Computer Engineering.I am currently interested in embedded systems.
-    </p>
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
-      <div class="card">
-        <div style="font-size: 30px;">🏅</div>
-        <h3>Experience</h3>
-        <p>Software Developer @Insider<br>Game Developer @Oyedu</p>
-      </div>
-      <div class="card">
-        <div style="font-size: 30px;">👥</div>
-        <h3>Education</h3>
-        <p>B.Sc. Bachelors Degree @Fırat University</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="experience">
-    <p class="section-subtitle">Explore My</p>
-    <h2 class="section-title">Experience</h2>
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
-      <div class="card">
-        <h3>Embedded Systems</h3>
-        <ul class="skills-list">
-          <li><strong>✔ Arduino</strong><br><span style="color: gray;">Intermediate</span></li>
-          <li><strong>✔ STM32</strong><br><span style="color: gray;">Experienced</span></li>
-          <li><strong>✔ ARM</strong><br><span style="color: gray;">Intermediate</span></li>
-          <li><strong>✔ UART</strong><br><span style="color: gray;">Intermediate</span></li>
-          <li><strong>✔ I2C</strong><br><span style="color: gray;">Intermediate</span></li>
-          <li><strong>✔ SPI</strong><br><span style="color: gray;">Intermediate</span></li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Software Engineering</h3>
-        <ul class="skills-list">
-          <li><strong>✔ Algorithms</strong><br><span style="color: gray;">Experienced</span></li>
-          <li><strong>✔ Data Structures</strong><br><span style="color: gray;">Intermediate</span></li>
-          <li><strong>✔ Java</strong><br><span style="color: gray;">Experienced</span></li>
-          <li><strong>✔ Python</strong><br><span style="color: gray;">Basic</span></li>
-          <li><strong>✔ C</strong><br><span style="color: gray;">Intermediate</span></li>
-          <li><strong>✔ C#</strong><br><span style="color: gray;">Experienced</span></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <p class="section-subtitle">Browse My Recent</p>
-    <h2 class="section-title">Projects</h2>
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
-      <!-- Tek bir şablon kullanılabilir -->
-      <div class="project-card">
-        <img src="assets/proje.png" alt="Project 1">
-        <h3 style="margin: 7px;">Project One</h3>
-        <div>
-          <a href="#" class="github-link">Github</a>
+    <nav id="hamburger-nav">
+      <div class="logo">Gökçenaz Akyol</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
-      <div class="project-card">
-        <img src="assets/proje.png" alt="Project 2">
-        <h3 style="margin: 7px;">Project Two</h3>
-        <div>
-          <a href="#" class="github-link">Github</a>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile.png" alt="Gökçenaz Akyol profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Gökçenaz Akyol</h1>
+        <p class="section__text__p2">Artificial Intelligence Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/GokcenazAkyolCV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/gokcenaz-akyol-a11bb41b8/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/gokcenazakyol'"
+          />
         </div>
       </div>
-      <div class="project-card">
-        <img src="assets/proje.png" alt="Project 3">
-        <h3 style="margin: 7px;">Project Three</h3>
-        <div>
-          <a href="#" class="github-link">Github</a>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>
+              Hello, my name is Gökçenaz! I am currently a senior student at 
+              Hacettepe University Artificial Intelligence Engineering Department. I would like 
+              to improve myself in the fields of Machine Learning, Deep Learning, 
+              Computer Vision and LLM.
+            </p>
+          </div>
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Artificial Intelligence Engineer @Metacognitive <br />Software Engineer @Amazoi Software <br /> Artificial Intelligence Engineer Intern @Bilishim Cyber Security and Artificial Intelligence </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree @Hacettepe University</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section id="contact" style="text-align: center; padding: 80px 20px;">
-    <h3 style="color: #6c6c6c; font-size: 18px;">Get in Touch</h3>
-    <h2 style="font-size: 40px; font-weight: bold; margin-bottom: 30px;">Contact Me</h2>
-  
-    <div style="
-        display: inline-flex;
-        gap: 30px;
-        padding: 20px 30px;
-        border: 2px solid #ccc;
-        border-radius: 20px;
-        font-size: 20px;
-        align-items: center;
-        flex-wrap: wrap;
-      ">
-      <a href="mailto:omerfaruktektas@outlook.com" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: black;">
-        <span style="font-size: 24px;">✉️</span> omerfaruktektas@outlook.com
-      </a>
-  
-      <a href="https://www.linkedin.com/in/omerfaruktektas/" target="_blank" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: black;">
-        <span style="font-size: 24px;">🔗</span> LinkedIn
-      </a>
-    </div>
-  </section>
-  <script src="script.js"></script>
-</body>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Machine Learning</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PyTorch</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tensorflow</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Pandas</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>OpenCV</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>scikit-learn</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Software Engineering</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Algorithms</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Data Structures</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">The Assistant</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/gokcenazakyol/TheAssistant'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Algorithm Problems</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/gokcenazakyol/Interview-Preparation'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Tracking of Students Facial Expressions</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/gokcenazakyol/Tracking-of-Students-Facial-Expressions'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:gokcenazzakyol@gmail.com">gokcenazzakyol@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/gokcenaz-akyol-a11bb41b8/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Gökçenaz Akyol. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
